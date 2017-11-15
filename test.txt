@@ -1,2 +1,4 @@
 test vim
-new file,test br2
+	new file,test br2
+this is file test
+
