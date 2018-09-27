@@ -23,12 +23,15 @@ public class test4 {
 				System.out.println(teststr);
 			}
 
+			data.setItem2("待上線人數");
+			data.setValue2(String.valueOf(onlineDatas.size()));
+
 		}finally {
-			
-		}        
+
+		}
 
 	}
-	
+
 	static public Optional<Long> testop(final String key) {
         try {
             return Optional.of(testre(key));
@@ -39,14 +42,14 @@ public class test4 {
         System.out.println("2");
         return Optional.empty();
     }
-	
+
 	static public long testre(final String key) {
         try {
             return Long.parseLong(key);
         } finally {
             System.out.println("testre-finally");
         }
-    
+
     }
 
 }
